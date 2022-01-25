@@ -1,0 +1,12 @@
+Base de datos
+
+
+Backend
+- Luci
+- Luciano
+
+
+Frontend
+- Sarai
+- Lucas Andrews
+

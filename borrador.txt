@@ -1,0 +1,115 @@
+TORTAS
+
+Roles usuarios
+  - Administrador
+  - Cliente
+  - Invitado
+
+Pedidos
+  - productos
+  - demora
+  - cliente
+  - dirección de entrega
+
+Clientes {
+  - nombre
+  - apellido
+  - correo
+  - número de contacto
+}
+
+Productos
+  - nombre
+  - precio
+  - descripcion
+  - imagen
+  - comentarios
+
+Pasarela de pago
+  -
+
+  Enunciado 
+      Se quiere desarrollar una plataforma web (Ecommerce) para la
+  gestión de productos y el manejo de ventas de tortas donde extirán 3 roles de usuario;
+  administrador, cliente e invitado. Cada rol podrá interactuar con la plataforma según sus restricciones
+  y funciones.
+      Clientes podrán realizar pedidos con la opción de agendar una fecha de entrega dependiendo del tiempo de producción 
+  de cada producto y sujeto a disponibilidad de la tienda. Luego de cada compra se pedirá una valoración.
+      En la sección de pedidos se tendrá la posibilidad de elegir temática de torta (estándar, cumpleaños o personalizadas), 
+  tamaño, porciones y relleno.   Y habrá un boton que redirecciona a la pasarela de pago
+    
+
+<> ROLES DE USUARIO
+
+ADMINISTRATOR
+  El administrador necesita un sitio donde centralizar sus pedidos, mostrar todos sus trabajos,
+  precios, tiempos de entrega y gestión de cobros, así como también una sección de
+  contacto.
+
+CLIENTE
+  Los Clientes podrán realizar pedidos con la opción de agendar una fecha de entrega
+  dependiendo del tiempo de producción y luego de recibir la unidad puede dejar sus
+  valoración
+
+PRIORIZACIÓN
+  1. Mostrar y describir todas las tortas disponibles para la venta y datos de contacto
+  2. Registro y logueo de usuarios. Base de datos (productos y clientes)
+  3. Posibilidad de hacer un pedido con uno o más productos (carrito de compras)
+  4. Pasarela de pagos
+  5. Panel administrativo con seguimiento de productos, pedidos y cobros.
+  6. Valoración del cliente
+  7. Sobre nosotros
+
+PRIORIZACIÓN
+
+Como ADMINISTRADOR QUIERO…
+  ● Mostrar la gama de productos que tengo a la venta organizada por temáticas
+  Para que al potencial cliente le sea más sencillo encontrar la opción que se ajuste a su
+  necesidad.
+
+  ● Describir las características de cada unidad: ingredientes, opciones de peso, tiempo
+  de elaboración, precios y fotos ilustrativas
+  Para que el cliente se encuentre con toda la información necesaria antes de realizar el
+  pedido.
+
+  ● Poder registrarme como Administrador: Contar con un panel administrativo
+  Para centralizar el trabajo y las tareas en un sólo lugar.
+
+  ● Acceder a la base de datos
+  Para agregar, quitar o modificar los productos que tengo a la venta y para guardar los datos
+  de los clientes.
+
+  ● Contar con un carrito de compras con la posibilidad de hacer un pedido con uno o
+  varios productos
+  Para que el cliente pueda comprar y pagar, todo en el mismo lugar.
+
+  ● Conocer los pedidos y pagos que van ingresando
+  Para gestionar el trabajo, los recursos y tiempos de entrega.
+
+  ● Posibilidad de rechazar futuros pedidos por un tiempo determinado
+  Para evitar que me hagan pedidos con los que no puedo cumplir
+
+  ● Marcar un pedido como entregado
+  Para completar el circuito de venta
+
+  ● Disparar un correo electrónico solicitando al cliente su valoración
+  Para mostrar a los potenciales clientes el impacto y resultado de mis productos
+
+  ● Tener una sección sobre mi empresa
+  Para que conozcan mi trayectoria y encuentren todos mis datos de contacto.
+
+
+Como CLIENTE QUIERO…
+
+  ● Ver las distintas opciones que ofrece la empresa con un buen soporte visual y
+  descriptivo
+  Para encontrarme con toda la información antes de comprar
+
+  ● Poder logearme y que mis datos estén seguros
+  Para que nadie conozca mi información personal
+
+  ● Poder brindar mi opinión sobre el producto que encontré
+  Para ayudar a la empresa y/o a otros usuarios
+
+  ● Encontrar toda la información a cerca de la empresa
+  Para comprar tranquilo sabiendo de su trayectoria y posición fiscal.
