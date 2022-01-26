@@ -11,12 +11,11 @@ Pedidos
   - cliente
   - dirección de entrega
 
-Clientes {
+Clientes 
   - nombre
   - apellido
   - correo
   - número de contacto
-}
 
 Productos
   - nombre
@@ -24,6 +23,12 @@ Productos
   - descripcion
   - imagen
   - comentarios
+  - tiempo de fabricación
+  - tamaños
+
+  S 100%
+  M 125%
+  L 150%  
 
 Pasarela de pago
   -
@@ -65,38 +70,49 @@ PRIORIZACIÓN
 Como ADMINISTRADOR QUIERO…
   ● Mostrar la gama de productos que tengo a la venta organizada por temáticas
   Para que al potencial cliente le sea más sencillo encontrar la opción que se ajuste a su
-  necesidad.
+  necesidad. 
+  DB - Card - Detalle
+  SP: 4
 
   ● Describir las características de cada unidad: ingredientes, opciones de peso, tiempo
   de elaboración, precios y fotos ilustrativas
   Para que el cliente se encuentre con toda la información necesaria antes de realizar el
   pedido.
+  SP: 2
 
   ● Poder registrarme como Administrador: Contar con un panel administrativo
   Para centralizar el trabajo y las tareas en un sólo lugar.
+  SP: 6
 
   ● Acceder a la base de datos
   Para agregar, quitar o modificar los productos que tengo a la venta y para guardar los datos
   de los clientes.
+  SP: 3
 
   ● Contar con un carrito de compras con la posibilidad de hacer un pedido con uno o
   varios productos
   Para que el cliente pueda comprar y pagar, todo en el mismo lugar.
+  SP: 6
 
   ● Conocer los pedidos y pagos que van ingresando
   Para gestionar el trabajo, los recursos y tiempos de entrega.
+  SP: 4
 
   ● Posibilidad de rechazar futuros pedidos por un tiempo determinado
   Para evitar que me hagan pedidos con los que no puedo cumplir
+  SP: 3
 
   ● Marcar un pedido como entregado
   Para completar el circuito de venta
+  SP: 1
 
   ● Disparar un correo electrónico solicitando al cliente su valoración
   Para mostrar a los potenciales clientes el impacto y resultado de mis productos
+  SP: 3
 
   ● Tener una sección sobre mi empresa
   Para que conozcan mi trayectoria y encuentren todos mis datos de contacto.
+  SP: 1
 
 
 Como CLIENTE QUIERO…
@@ -104,12 +120,30 @@ Como CLIENTE QUIERO…
   ● Ver las distintas opciones que ofrece la empresa con un buen soporte visual y
   descriptivo
   Para encontrarme con toda la información antes de comprar
+  SP: 3
 
   ● Poder logearme y que mis datos estén seguros
   Para que nadie conozca mi información personal
+  SP: 5
 
   ● Poder brindar mi opinión sobre el producto que encontré
   Para ayudar a la empresa y/o a otros usuarios
+  SP: 1
 
   ● Encontrar toda la información a cerca de la empresa
   Para comprar tranquilo sabiendo de su trayectoria y posición fiscal.
+  SP: 1
+
+
+Como VISITANTE QUIERO…
+
+  ● Ver las distintas opciones que ofrece la empresa con un buen soporte visual y
+  descriptivo sin necesidad de registrarme
+  Para encontrarme con toda la información antes de comprar
+  SP: 3
+
+  ● Encontrar toda la información a cerca de la empresa
+  Para comprar tranquilo sabiendo de su trayectoria y posición fiscal.
+  SP: 1
+
+  
