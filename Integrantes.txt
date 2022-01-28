@@ -1,12 +1,25 @@
-Base de datos
+User Story
+1. (sp 4) 2 Integrantes
+2. (sp 2) 1 Integrantes
+3. (sp 6) 3 Integrantes
 
+Story Points:
+33 administrador
+10 cliente
+4 visita
+47 TOTAL
+12/sprint
 
-Backend
-- Luci
-- Luciano
+Sprint planning
+  Sprint 1
+    1 modulo administrador
+    2 modulo pedidos
+    3 modulo productos
+    4 modulo cliente
+    5 crear rutas
+    6 componente "Home" y "Landing page"
 
-
-Frontend
-- Sarai
-- Lucas Andrews
-
+     info {
+    DB - Card - Detalle
+    8 tematicas (clasica, infantiles, bautismo, comunion, boda, 15 años, institucional, personalizada con foto)
+  } 

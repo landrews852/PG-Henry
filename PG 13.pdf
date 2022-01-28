@@ -1,54 +1,12 @@
-1. Armado de grupos de ~ 8 integrantes
-2. Presentación de enunciado general de la aplicación a desarrollar
-3. Denición de US
-4. Priorización
-5. Estimación
-6. Sprint Planning
-7. Desgloce de tareas
-
-TORTAS
-
-Roles usuarios
-  - Administrador
-  - Cliente
-  - Invitado
-
-Pedidos
-  - productos
-  - demora
-  - cliente
-  - dirección de entrega
-
-Clientes 
-  - nombre
-  - apellido
-  - correo
-  - número de contacto
-
-Productos
-  - nombre
-  - precio
-  - descripcion
-  - imagen
-  - comentarios
-  - tiempo de fabricación
-  - tamaños:
-    S 100% del valor
-    M 125% del valor
-    L 150% del valor
-
-Pasarela de pago
-  -
-
-  Enunciado 
-      Se quiere desarrollar una plataforma web (Ecommerce) para la
-  gestión de productos y el manejo de ventas de tortas donde extirán 3 roles de usuario;
-  administrador, cliente e invitado. Cada rol podrá interactuar con la plataforma según sus restricciones
-  y funciones.
-      Clientes podrán realizar pedidos con la opción de agendar una fecha de entrega dependiendo del tiempo de producción 
-  de cada producto y sujeto a disponibilidad de la tienda. Luego de cada compra se pedirá una valoración.
-      En la sección de pedidos se tendrá la posibilidad de elegir temática de torta (estándar, cumpleaños o personalizadas), 
-  tamaño, porciones y relleno.   Y habrá un boton que redirecciona a la pasarela de pago
+Enunciado 
+    Se quiere desarrollar una plataforma web (Ecommerce) para la
+gestión de productos y el manejo de ventas de tortas donde extirán 3 roles de usuario;
+administrador, cliente e invitado. Cada rol podrá interactuar con la plataforma según sus restricciones
+y funciones.
+    Clientes podrán realizar pedidos con la opción de agendar una fecha de entrega dependiendo del tiempo de producción 
+de cada producto y sujeto a disponibilidad de la tienda. Luego de cada compra se pedirá una valoración.
+    En la sección de pedidos se tendrá la posibilidad de elegir temática de torta (estándar, cumpleaños o personalizadas), 
+tamaño, porciones y relleno.   Y habrá un boton que redirecciona a la pasarela de pago
     
 
 <> ROLES DE USUARIO
