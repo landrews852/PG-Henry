@@ -1,19 +1,31 @@
-# PG-Henry
-Proyecto grupal para Henry
-Pasteleria E-COMMERCE
+# PG-13 Henry
 
+<img align="right" src="my-app/src/Images/Logo Pasteleria.png" height="450px">
 
->> Pasos para inicar el servidor y abrir la web
+## Pasteleria E-COMMERCE
 
-  BACK-END
-    comandos a ejecutar
-      1. cd backend
-      2. npm install
-      3. npm start
+</br>
 
-  FRONT-END
-    abrir una nueva terminal
-    comandos a ejecutar:
-      1. cd my-app
-      2. npm install
-      3. npm start
+## Steps to start the server and open in navigator
+
+### BACK-END
+
+<p>Run this commands:</p>
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+### FRONT-END
+
+#### Open a new terminal
+
+<p>Run this commands:</p>
+
+```bash
+cd backend
+npm install
+npm start
+```
