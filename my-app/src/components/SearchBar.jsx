@@ -14,11 +14,11 @@ export default function SearchBar() {
         console.log(name);
     }
 
-    function handleSubmit(e){
+    /* function handleSubmit(e){
         e.preventDefault();
         dispatch(getProducts(name));
         setName('');
-    }
+    } */
 
     return (
       <div className="search-bar">
@@ -27,7 +27,7 @@ export default function SearchBar() {
            placeholder="Search your product here..."
               onChange={handleInputChange}
            />
-           <button className="btn" type="submit" onClick={handleSubmit}>Search</button>
+           {/* <button className="btn" type="submit" onClick={handleSubmit}>Search</button> */}
       </div>
     )
 
