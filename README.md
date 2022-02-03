@@ -1,6 +1,6 @@
 # PG-13 Henry
 
-<img align="right" src="my-app/src/Images/Logo Pasteleria.png" height="450px">
+<img align="right" src="./my-app/src/Images/Logo_Pasteleria_T.png" height="450px">
 
 ## Pasteleria E-COMMERCE
 
@@ -25,7 +25,7 @@ npm start
 <p>Run this commands:</p>
 
 ```bash
-cd backend
+cd my-app
 npm install
 npm start
 ```

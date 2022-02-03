@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IconLogoMobile, LogoP, Menu, MenuItem, MenuItemLink, NavBarContainer, NavBarWrapper } from './Navbar.elements';
 import Logo from '../../Images/Logo_Pasteleria_T.png';
 import { FaBars, FaTimes } from "react-icons/fa";
+import {Link} from 'react-router-dom';
 
 function NavBar() {
 
@@ -38,11 +39,11 @@ function NavBar() {
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>About</MenuItemLink>
             </MenuItem>
-
+<Link to="/home">
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Products</MenuItemLink>
             </MenuItem>
-
+</Link>
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Contact</MenuItemLink>
             </MenuItem>
