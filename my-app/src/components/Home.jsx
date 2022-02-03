@@ -2,17 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import SearchBar from './SearchBar';
+import NavBar from './NavBar/NavBar';
+import SearchBar from './searchbar/SearchBar';
+import './Home.css';
 
 export default function Home() {
   return (
     <div className="home-container">
-      <h1>Tienda</h1>
       <div className="nav-bar">
-        {/* <NavBar /> */}
+        <NavBar />
       </div>
-      <div className="search-bar">
-        {/* <SearchBar /> */}
+      <div className="home-content">
+
+      <div align="right" className="search-bar">
+        <SearchBar />
+      </div>
+      <h1>Tienda</h1>
       </div>
     </div>
 )

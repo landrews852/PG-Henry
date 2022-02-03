@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 // import { getProducts } from '../redux/Actions';
+import './SearchBar.css';
 
 
 export default function SearchBar() {
@@ -22,12 +23,12 @@ export default function SearchBar() {
 
     return (
       <div className="search-bar">
-           <input className="input"
+           <input className="input-searchbar"
            value={name} type="text"
            placeholder="Search your product here..."
               onChange={handleInputChange}
            />
-           {/* <button className="btn" type="submit" onClick={handleSubmit}>Search</button> */}
+           <button className="btn-searchbar" type="submit" >Search</button>
       </div>
     )
 
