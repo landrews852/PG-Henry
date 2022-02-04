@@ -51,10 +51,11 @@ function NavBar() {
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Shopping Cart</MenuItemLink>
             </MenuItem>
-
+<Link to="/login"> 
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Login</MenuItemLink>
             </MenuItem>
+</Link>            
           </Menu>
          
         </NavBarWrapper>
