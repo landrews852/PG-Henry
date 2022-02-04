@@ -1,4 +1,4 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes, FLOAT } = require('sequelize');
 
 module.exports = (sequelize) => {
   sequelize.define('products', {
@@ -33,6 +33,19 @@ module.exports = (sequelize) => {
     category: {
         type: DataTypes.STRING,
         allowNull: false
-    }
+    },
+
+    size_S: {
+      type: FLOAT,
+      allowNull: false,
+    },
+    size_M: {
+      type: FLOAT,
+      allowNull: false,
+    },
+    size_L: {
+      type: FLOAT,
+      allowNull: false,
+    },
   })
 };
