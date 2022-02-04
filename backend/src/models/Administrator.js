@@ -1,7 +1,7 @@
 const { DataTypes, UUIDV4 } = require('sequelize');
 
 module.exports = (sequelize) => {
-  sequelize.define('administrator', {
+  sequelize.define('login', {
     id: {
         type: DataTypes.UUID,
         defaultValue: UUIDV4,
@@ -13,6 +13,10 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false
     },
+    lastName: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
 
     email:{
         type: DataTypes.STRING,
@@ -20,7 +24,7 @@ module.exports = (sequelize) => {
     },
 
     password: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
   })
