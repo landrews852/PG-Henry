@@ -20,10 +20,14 @@ export default function Home() {
         <SearchBar />
       </div>
       <br/>
-      <h1>Cakes categories</h1>
+      <h1>Aqui va el slider</h1>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <div>
-        <Categories />
+        <h2>Testimonio de clientes</h2>
       </div>
       <div className='footer'>
         <Footer />

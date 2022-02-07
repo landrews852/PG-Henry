@@ -46,11 +46,11 @@ function NavBar() {
             </MenuItem>
           </Link>
 
-          {/* <Link to="/products">
+          <Link to="/categories">
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Products</MenuItemLink>
             </MenuItem>
-          </Link> */}
+          </Link>
 
           <Link to="/contact">
             <MenuItem onClick={() => changeClick()}>
