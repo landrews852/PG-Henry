@@ -1,4 +1,6 @@
 .search-bar {
   margin-right: 5px;
   padding-top: 5px;
+  position: absolute;
+  right: 10%;
 }
