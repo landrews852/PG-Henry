@@ -22,10 +22,12 @@ function NavBar() {
         
         <NavBarWrapper>
 
+<Link to='/'>
           <LogoP>
             <img src={Logo} alt="logo" width={100} height={100} />
             
           </LogoP>
+</Link>
 
           <IconLogoMobile onClick={() => changeClick()}>
             
@@ -44,11 +46,11 @@ function NavBar() {
             </MenuItem>
           </Link>
 
-          <Link to="/products">
+          {/* <Link to="/products">
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Products</MenuItemLink>
             </MenuItem>
-          </Link>
+          </Link> */}
 
           <Link to="/contact">
             <MenuItem onClick={() => changeClick()}>

@@ -20,7 +20,7 @@ export default function Home() {
         <SearchBar />
       </div>
       <br/>
-      <h1>Tienda</h1>
+      <h1>Cakes categories</h1>
       </div>
       <div>
         <Categories />

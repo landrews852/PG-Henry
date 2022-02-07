@@ -45,33 +45,36 @@ export default function Signin() {
             <div className="nav-bar">
                 <NavBar />
             </div>
-            <form onSubmit={(e) => {handleSubmit(e)}}>
-                <div>
+            <form className={s.signinForm} onSubmit={(e) => {handleSubmit(e)}}>
+                <div className={s.signinForm__input}>
+
+                <div className={s.inputSignin}>
                     <label>Name:</label>
                     <input type="text" value={name} onChange={(e) => {handleChange(e)}} />
                 </div>
-                <div>
+                <div className={s.inputSignin}>
                     <label>Lastname:</label>
                     <input type="text" value={lastName} onChange={(e) => handleLastNameChange(e)} />
                 </div>
-                <div>
+                <div className={s.inputSignin}>
                     <label>Email:</label>
                     <input type="email" value={email} onChange={(e)=> {handleEmailChange(e)}} />
                 </div>
-                <div>
+                <div className={s.inputSignin}>
                     <label>Birthday:</label>
                     <input type="date" />
                 </div>
-                <div>
+                <div className={s.inputSignin}>
                     <label>Password:</label>
                     <input type="password" value={password} onChange={(e) => {handlePasswordChange(e)}} />
                 </div>
-                <div>
+                <div className={s.inputSignin}>
                     <label>Confirm Password:</label>
                     <input type="password" value={confPassword} onChange={(e) => {handleConfPasswordChange(e)}} />
                 </div>
-                <div>
+                <div className={s.inputSignin}>
                 <input type="submit" value="Submit"/>
+                </div>
                 </div>
             </form>
             <Link to="/">

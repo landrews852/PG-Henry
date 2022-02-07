@@ -31,9 +31,9 @@ export default function Categories() {
             </div>
             </Link>
 
-            <Link to="/selvanegra">
+            <Link to="/classic">
             <div className="category-card">
-                <h2>Selva Negra</h2>
+                <h2>Classic</h2>
                 <img height="300px" className="categories-img" src={selvaNegra} alt="img bautismo" />
             </div>
             </Link>
