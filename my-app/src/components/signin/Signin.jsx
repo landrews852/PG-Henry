@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import s from "./Signin.module.css";
 // import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import NavBar from "../navbar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import Footer from "../footer/Footer";
 
 export default function Signin() {
