@@ -23,7 +23,7 @@ export default function SearchBar() {
     }
 
     return (
-      <div className="search-bar">
+      <div className="searchbar-container">
            <input className="input-searchbar"
            value={name} type="text"
            placeholder="Search your product here..."

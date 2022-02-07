@@ -16,9 +16,10 @@ export default function Home() {
       </div>
       <div className="home-content">
 
-      <div align="right" className="search-bar">
+      <div className="search-bar">
         <SearchBar />
       </div>
+      <br/>
       <h1>Tienda</h1>
       </div>
       <div>
