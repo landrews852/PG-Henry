@@ -1,15 +1,21 @@
 .lista {
-    display: inline-flex;
- }
+  display: inline-flex;
+  padding-top: 15px;
+}
 
- .li {
-    margin-left: 15px;
-    margin-right: 15px;
-    list-style: none;
- }
- 
- .a {
-     text-decoration: none;
-     font-weight: bold;
-     color: black
- }
+.li {
+  margin-left: 15px;
+  margin-right: 15px;
+  list-style: none;
+}
+
+.a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  border-top: 1px solid #e5e5e5;
+  width: 900px;
+}

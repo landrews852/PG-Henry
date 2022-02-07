@@ -3,6 +3,7 @@ import { IconLogoMobile, LogoP, Menu, MenuItem, MenuItemLink, NavBarContainer, N
 import Logo from '../../Images/Logo_Pasteleria_T.png';
 import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-router-dom';
+import "./NavBar.css";
 
 function NavBar() {
 
@@ -15,7 +16,7 @@ function NavBar() {
 
   return (
 
-    <>
+    <div className='navbar-container'>
 
       <NavBarContainer>
         
@@ -36,32 +37,43 @@ function NavBar() {
           </IconLogoMobile>
 
           <Menu click={click}>
+
+          <Link to="/about">
             <MenuItem onClick={() => changeClick()}>
-              <MenuItemLink>About</MenuItemLink>
+              <MenuItemLink>About us</MenuItemLink>
             </MenuItem>
-<Link to="/productos">
+          </Link>
+
+          <Link to="/products">
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Products</MenuItemLink>
             </MenuItem>
-</Link>
+          </Link>
+
+          <Link to="/contact">
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Contact</MenuItemLink>
             </MenuItem>
+          </Link>
 
-            <MenuItem onClick={() => changeClick()}>
+          <Link to="/cart">
+            <MenuItem onClick={() => changeClick()}>  
               <MenuItemLink>Shopping Cart</MenuItemLink>
             </MenuItem>
-<Link to="/login"> 
+          </Link>
+          
+
+          <Link to="/login"> 
             <MenuItem onClick={() => changeClick()}>
               <MenuItemLink>Login</MenuItemLink>
             </MenuItem>
-</Link>            
+          </Link>            
           </Menu>
          
         </NavBarWrapper>
       </NavBarContainer>
         
-    </>
+    </div>
   )
 }
 
