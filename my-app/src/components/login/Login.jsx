@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavBar from "../navbar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import Footer from "../footer/Footer";
 
 export default function Login() {

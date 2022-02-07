@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../footer/Footer';
-import NavBar from '../navbar/NavBar';
+import NavBar from '../NavBar/NavBar';
 
 export default function ShoppingCart() {
   return (
