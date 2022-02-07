@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 // import { getProducts } from '../redux/Actions';
 import './SearchBar.css';
 
 
 export default function SearchBar() {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const [name, setName] = useState('');
 
     function handleInputChange(e){
@@ -15,11 +15,12 @@ export default function SearchBar() {
         console.log(name);
     }
 
-    /* function handleSubmit(e){
+    function handleSubmit(e){
         e.preventDefault();
-        dispatch(getProducts(name));
+        // dispatch(getProducts(name));
+        alert('Search is not implemented yet');
         setName('');
-    } */
+    }
 
     return (
       <div className="search-bar">
@@ -28,7 +29,7 @@ export default function SearchBar() {
            placeholder="Search your product here..."
               onChange={handleInputChange}
            />
-           <button className="btn-searchbar" type="submit" >Search</button>
+           <button className="btn-searchbar" type="submit" onClick={handleSubmit} >Search</button>
       </div>
     )
 

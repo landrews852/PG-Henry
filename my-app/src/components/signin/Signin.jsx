@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import s from "./Signin.module.css";
+// import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import NavBar from "../navbar/NavBar";
+import Footer from "../footer/Footer";
 
 export default function Signin() {
 
@@ -31,13 +35,16 @@ export default function Signin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (password != confPassword) {
-            alert("password Not Match");
-        }
+        if (password !== confPassword) {
+            alert("Password does not match");
+        } else alert("Sign in feature is not ready yet")
     }
 
     return (
         <div className={s.container}>
+            <div className="nav-bar">
+                <NavBar />
+            </div>
             <form onSubmit={(e) => {handleSubmit(e)}}>
                 <div>
                     <label>Name:</label>
@@ -67,6 +74,12 @@ export default function Signin() {
                 <input type="submit" value="Submit"/>
                 </div>
             </form>
+            <Link to="/">
+                <button>Back</button>
+            </Link>
+            <div className='footer'>
+                <Footer />
+            </div>
         </div>
     )
 }
