@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {GET_PRODUCTS} from './types';
+import {GET_PRODUCTS, FILTER_BY_CATEGORY} from './types';
 
 export function getProducts(){
     return async function(dispatch){
@@ -10,3 +10,11 @@ export function getProducts(){
         });
     }
 };
+/*
+export function filterCakesByCategory(payload){
+    console.log(payload)
+    return {
+        type: FILTER_BY_CATEGORY,
+        payload
+    }
+}*/

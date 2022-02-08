@@ -12,9 +12,11 @@ import corporative from "../../Images/Torta Corporativa.jpg";
 import unicornio from "../../Images/Torta Infantil Unicornio.jpg";
 import quinceAños from "../../Images/Torta_15_Años.jpg";
 import personalizada from "../../Images/Torta Personalizada Lamina Comestible.jpg";
-
+import { useSelector} from 'react-redux';
 
 export default function Categories() {
+const products = useSelector((state) => state.productos);
+console.log('products: ',products)
     return (
         <div>
             <div className="nav-bar">
