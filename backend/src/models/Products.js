@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
     },
 
     time: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.TEXT,
         allowNull: false
     },
 
@@ -47,5 +47,6 @@ module.exports = (sequelize) => {
       type: FLOAT,
       allowNull: false,
     },
-  })
+  }, {timestamps: false},  // PARA NO AGREGAR  updated_at/created_at
+  );
 };
