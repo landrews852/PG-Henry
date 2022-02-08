@@ -52,14 +52,14 @@ export default function Categories() {
 
                 <Link to="/children">
                 <div className="category-card">
-                    <h2>children's cake</h2>
+                    <h2>Children's cake</h2>
                     <img height="300px" className="categories-img" src={unicornio} alt="img bautismo" />
                 </div>
                 </Link>
 
                 <Link to="/fifteen">
                 <div className="category-card">
-                    <h2>15 years old</h2>
+                    <h2>15 years</h2>
                     <img height="300px" className="categories-img" src={quinceAños} alt="img bautismo" />
                 </div>
                 </Link>
