@@ -1,4 +1,4 @@
-const {Products} = require('../db');
+const {Products, Login, User} = require('../db');
 
 const { Router } = require("express");
 const router = Router();
@@ -14,6 +14,21 @@ router.get('/products', async (req, res ) => {
     } catch (error) {
         console.log(error)
         res.json('Error en el Catch.')
+    }
+});
+
+router.get('/products/:id', async (req, res) => {
+    try {
+        const {id} = req.params
+        const searchId = await Products.findByPk(id,{
+            attributes:{
+                exclude:['createdAt', 'updatedAt']
+            }
+        });
+        searchId ? res.status(200).json(searchId) : res.send('¡No se encontro el Producto por ID!');
+    } catch (error) {
+        console.log('Error: ',error);
+        res.json('Error en el Catch.');
     }
 });
 
@@ -37,18 +52,36 @@ router.post('/create', async(req,res) => {
     }
 });
 
-router.get('/products/:id', async (req, res) => {
+router.post('/Login', async(req,res) => {
     try {
-        const {id} = req.params
-        const searchId = await Products.findByPk(id,{
-            attributes:{
-                exclude:['createdAt', 'updatedAt']
-            }
+        const {name, lastName, email, password } = req.body;
+        const createLogin = await Login.create({
+            name,
+            lastName,
+            email,
+            password,
         });
-        searchId ? res.status(200).json(searchId) : res.send('¡No se encontro el Producto por ID!');
+        res.status(200).json(createLogin);
     } catch (error) {
-        console.log('Error: ',error);
-        res.json('Error en el Catch.');
+        console.log(error);
+        res.json('Error en el Catch.')
+    }
+});
+
+router.post('/User', async(req,res) => {
+    try {
+        const {name, last_name, email, birthday, password } = req.body;
+        const createUser = await User.create({
+            name,
+            last_name,
+            email,
+            birthday,
+            password,
+        });
+        res.status(200).json(createUser);
+    } catch (error) {
+        console.log(error);
+        res.json('Error en el Catch.')
     }
 });
 
