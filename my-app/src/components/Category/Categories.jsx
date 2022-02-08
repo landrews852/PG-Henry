@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { useState, useEffect } from "react";
-// import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {getProducts} from '../../redux/Actions';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../footer/Footer';
 import "./Categories.css";
@@ -15,6 +16,16 @@ import personalizada from "../../Images/Torta Personalizada Lamina Comestible.jp
 
 
 export default function Categories() {
+
+    const products = useSelector((state) => state.productos);
+    console.log('products: ',products);
+    const dispatch = useDispatch();
+    
+    useEffect(() => {
+        dispatch(getProducts());
+    },[dispatch]);
+
+
     return (
         <div>
             <div className="nav-bar">
