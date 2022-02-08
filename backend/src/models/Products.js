@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
     },
 
     time: {
-        type: DataTypes.TEXT,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
 

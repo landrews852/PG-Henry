@@ -1,2 +1,3 @@
 export const GET_PRODUCTS = 'GET_PRODUCTS';
 export const GET_PEDIDOS = 'GET_PEDIDOS';
+export const POST_PRODUCTS = 'POST_PRODUCTS';
