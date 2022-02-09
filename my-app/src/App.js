@@ -2,7 +2,14 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import NavBar from './components/NavBar/NavBar.jsx';
+import Login from './components/login/Login';
+import Signin from './components/signin/Signin';
+import Products from './components/Category/Products';
+import Contact from './components/contact/Contact';
+import ShoppingCart from './components/shopping_cart/ShoppingCart';
+import AboutUs from './components/AboutUs';
+import Categories from './components/Category/Categories';
+// import NavBar from './components/NavBar/NavBar.jsx';
 /* import NavBar from './components/navbar/NavBar'; */
 
 
@@ -11,11 +18,16 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<NavBar />}/>
+          <Route path="/" element={<Home />}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<ShoppingCart />} />
+          <Route path="/about" element={<AboutUs />} />
           {/* <Route exact path="/" element={<LandingPage />} /> */}
-          <Route path="/home" element={<Home />} />
+          {/* <Route path="/home" element={<Home />} /> */}
           {/* <Route path="/home/:id" element={<Detail />} /> */}
-          {/* <Route path="/home/about" element={<AboutUs />} /> */}
         </Routes>
       </div>
     </BrowserRouter>

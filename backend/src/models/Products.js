@@ -1,21 +1,17 @@
-const { DataTypes, UUIDV4 } = require('sequelize');
+const { DataTypes, FLOAT } = require('sequelize');
 
 module.exports = (sequelize) => {
   sequelize.define('products', {
-    id: {
-        type: DataTypes.UUID,
-        defaultValue: UUIDV4,
+    id_product: {
+        type: DataTypes.INTEGER,
+        unique: true,
+        autoIncrement: true,
         allowNull: false,
-        primaryKey: true
+        primaryKey: true,
       },
 
     name: {
         type: DataTypes.STRING,
-        allowNull: false
-    },
-
-    price: {
-        type: DataTypes.INTEGER,
         allowNull: false
     },
 
@@ -30,22 +26,27 @@ module.exports = (sequelize) => {
     },
 
     time: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-        
-    type: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-        
-    size: {
-        type: DataTypes.STRING(1),
+        type: DataTypes.TEXT,
         allowNull: false
     },
 
-    comments: {
+    category: {
         type: DataTypes.STRING,
+        allowNull: false
     },
-  })
+
+    size_S: {
+      type: FLOAT,
+      allowNull: false,
+    },
+    size_M: {
+      type: FLOAT,
+      allowNull: false,
+    },
+    size_L: {
+      type: FLOAT,
+      allowNull: false,
+    },
+  }, {timestamps: false},  // PARA NO AGREGAR  updated_at/created_at
+  );
 };

@@ -1,0 +1,25 @@
+.lista {
+  display: inline-flex;
+  padding-top: 15px;
+}
+
+.li {
+  margin-left: 15px;
+  margin-right: 15px;
+  list-style: none;
+}
+
+.a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  border-top: 1px solid #d6d6d6;
+  width: 100%;
+  margin-top: 20px;
+  position: sticky;
+  bottom: 1%;
+  background-color: #ebebf2;
+}
