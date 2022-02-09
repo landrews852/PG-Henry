@@ -1,18 +1,29 @@
-import React, { useState } from 'react';
-import { IconLogoMobile, LogoP, Menu, MenuItem, MenuItemLink, NavBarContainer, NavBarWrapper } from './Navbar.elements';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { IconLogoMobile, LogoP, Menu, MenuItem, MenuItemLink, NavBarContainer, NavBarWrapper, Select } from './Navbar.elements';
 import Logo from '../../Images/Logo_Pasteleria_T.png';
 import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 import "./NavBar.css";
+import { filterByCategories } from '../../redux/Actions';
 
 function NavBar() {
 
-    const [click, setClick] = useState(false);
+  const dispatch = useDispatch();
 
-    function changeClick(){
-      setClick(!click);
-      console.log(click);
-    }
+  const categories = useSelector(state => state.categories)
+
+  const [click, setClick] = useState(false);
+
+  function changeClick(){
+    setClick(!click);
+    console.log(click);
+  }
+
+  function handleFilterCategories(e) {
+    dispatch(filterByCategories(e.target.value));
+
+  }
 
   return (
 
@@ -22,12 +33,12 @@ function NavBar() {
         
         <NavBarWrapper>
 
-<Link to='/'>
-          <LogoP>
-            <img src={Logo} alt="logo" width={100} height={100} />
-            
-          </LogoP>
-</Link>
+          <Link to='/'>
+            <LogoP>
+              <img src={Logo} alt="logo" width={100} height={100} />
+              
+            </LogoP>
+          </Link>
 
           <IconLogoMobile onClick={() => changeClick()}>
             
@@ -46,11 +57,19 @@ function NavBar() {
             </MenuItem>
           </Link>
 
-          <Link to="/categories">
-            <MenuItem onClick={() => changeClick()}>
-              <MenuItemLink>Products</MenuItemLink>
+          {/* <Link to="/categories"> */}
+            <MenuItem onChange={handleFilterCategories}>
+              <label>Products</label>
+              <Select>
+                <option disabled>Select an option:</option>
+                <option hidden>Select an option</option>
+                <option value="All">All</option>
+                {categories && categories.length > 0 ? categories.map(mp => (
+                  <option key={mp} value={mp} >{mp}</option>
+                  )) : null}
+              </Select>
             </MenuItem>
-          </Link>
+          {/* </Link> */}
 
           <Link to="/contact">
             <MenuItem onClick={() => changeClick()}>

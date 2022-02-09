@@ -1,10 +1,12 @@
 import React from 'react';
+import "./Card.css"
 
-export function Card({name, img}){
+export function Card({id_product, name, img, category}){
     return(
-        <div>
+        <div className='card'>
+            <img src={img} alt='imgCard' width='250px' height='125px' />
             <h1>{name}</h1>
-            <img src={img} alt='imageCard' width='250px' height='125px' />
+            <h3>{category}</h3>
         </div>
     )
 };

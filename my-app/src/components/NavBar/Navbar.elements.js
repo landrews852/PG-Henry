@@ -93,4 +93,6 @@ export const IconLogoMobile = styled.div`
     }
 `;
 
+export const Select = styled.select`
 
+`;
