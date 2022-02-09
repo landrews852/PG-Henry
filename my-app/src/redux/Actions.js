@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {GET_PRODUCTS} from './types';
+import {GET_PRODUCTS, GET_CATEGORIES} from './types';
 
 export function getProducts(){
     return async function(dispatch){
@@ -10,3 +10,14 @@ export function getProducts(){
         });
     }
 };
+
+export function getCategories() {
+  return async function (dispatch) {
+    var json = await axios.get('http://localhost:3001/products');
+
+    dispatch({
+      type: GET_CATEGORIES,
+      payload: json.data,
+    });
+  };
+}

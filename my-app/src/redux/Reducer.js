@@ -1,9 +1,10 @@
-import {GET_PRODUCTS, GET_PEDIDOS} from '../redux/types';
+import {GET_PRODUCTS, GET_PEDIDOS, GET_CATEGORIES} from '../redux/types';
 
 const initialState = {
   productos : [],
   allProductos: [],
-  pedidos: []
+  pedidos: [],
+  categories: [],
 };
 
 function rootReducer(state = initialState, {type, payload}) {
@@ -14,11 +15,20 @@ function rootReducer(state = initialState, {type, payload}) {
         pedidos: payload
       };
 
-      case GET_PRODUCTS:
+    case GET_PRODUCTS:
+      return {
+        ...state,
+        productos: payload,
+        allProductos: payload
+      };
+    
+    case GET_CATEGORIES:
+    // console.log('GET_CATEGORIES', action.payload);
+      const categories = action.payload.map(e => e.category).flat()
+      const categoriesUnique = [...new Set(categories)]
         return {
           ...state,
-          productos: payload,
-          allProductos: payload
+          categories: categoriesUnique,
         };
     
     default:
